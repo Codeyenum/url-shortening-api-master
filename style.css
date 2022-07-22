@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root {
+    /* ### Primary */
+    --cyan: hsl(180, 66%, 49%);
+    --darkViolet: hsl(257, 27%, 26%);
+
+    /* ### Secondary */
+    --red: hsl(0, 87%, 67%);
+
+    /* ### Neutral */
+    --gray: hsl(0, 0%, 75%);
+    --grayishViolet: hsl(257, 7%, 63%);
+    --veryDarkBlue: hsl(255, 11%, 22%);
+    --veryDarkViolet: hsl(260, 8%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {    
+    font-family: 'Poppins', sans-serif;    
+    padding: 2rem 1.25rem ;
+    text-align: center;
+}
+
+.intro_section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: -1.25rem;
+}
+
+.working_img {
+    margin: 2.5rem 0;
+    margin-right: -8.25rem;            
+}
+
+h1, h2, h3 {
+    color: var(--veryDarkViolet);
+}
+
+.intro_section h1 {    
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: -0.05rem;
+}
+
+p {
+    color: var(--grayishViolet);
+    margin: 1rem 0;
+}
+
+.get_started {
+    background-color: var(--cyan); 
+    border: none; 
+    border-radius: 29px;  
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem 0 4.25rem;
+    padding: .85rem 3rem;
+}
+
+form {
+    background-image: url("./images/bg-shorten-mobile.svg");
+    background-repeat: no-repeat;    
+    background-position: top right;
+    background-color: var(--darkViolet);   
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .85rem;
+    padding: 1.25rem;  
+    transform: translateY(-50%);   
+}
+
+form input,form button {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;  
+    height: 2.5rem;
+    padding: 0 .75rem;
+    width: 100%;
+}
+
+form button {
+    background-color: var(--cyan);
+    color: white;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.statistics_section {    
+    background-color: hsla(0, 0%, 75%, 0.2);
+    margin: 5rem -1.25rem 0;
+    padding: 0 1.25rem;
+}
+
+.statistics_section h2 {    
+    font-size: 1.5rem;    
+    margin: 1rem 0;
+}
+
+.statistics_section p {
+    color: var(--grayishViolet);
+    font-size: .85rem;
+}
+
+.stat_groups {
+    position: relative;
+    padding: 5rem 0 .1rem;
+}
+
+.group {
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 0 1.35rem;
+}
+
+.group div {
+    background-color: var(--darkViolet);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    transform: translateY(-50%);
+}
+
+.group p {
+    margin-bottom: 2.25rem;
+}
+
+.cyan-line {
+    background-color: var(--cyan);
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    width: .5rem;
+    height: 650px;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
+.boost_section {
+    background-image: url("./images/bg-boost-mobile.svg");
+    background-repeat: no-repeat;    
+    background-position: center;
+    background-size: cover;
+    background-color: var(--darkViolet);
+    color: white;
+    margin: 0 -1.25rem;
+    padding: 3rem 1.25rem;
+    text-align: center;
+}
+
+.boost_section h2 {
+    color: white;
+    letter-spacing: -0.05rem;
+}
+
+.boost_section button {
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: var(--veryDarkBlue);
+    margin: 0 -1.25rem;
+}
+
+.footer_nav {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_nav section {
+    display: flex;
+    flex-direction: column;
+    margin: .85rem 0;
+}
+
+.footer_nav h4 {
+    font-size: .85rem;
+    margin: .75rem;
+}
+
+.footer_nav a {
+    color: var(--gray);
+    font-size: .75rem;
+    margin: .25rem 0;
+    text-decoration: none;
+}

@@ -7,8 +7,8 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" type="style/css" href="style.css">
-    <script src="https://kit.fontawesome.com/1b2bdedf91.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/1b2bdedf91.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -34,42 +34,51 @@
         Sign Up
     </header>
     <main>
-        <section>
-            <h1>More than just shorter links</h1>
-            <p>
-                Build your brand’s recognition and get detailed insights
-                on how your links are performing.
-            </p>
-            <button type="submit">Get Started</button>
+        <section class="intro_section">
+            <img class="working_img" src="./images/illustration-working.svg" alt="">
+            <div>
+                <h1>More than just shorter links</h1>
+                <p>
+                    Build your brand’s recognition and get detailed insights
+                    on how your links are performing.
+                </p>
+                <button class="get_started" type="submit">Get Started</button>
+            </div>
+        </section>
+        <section class="statistics_section">
             <form>
                 <div>
                     <input type="text" placeholder="Shorten a link here..." aria-label="link">
                 </div>
                 <button type="submit">Shorten It!</button>
             </form>
-        </section>
-        <section>
-            <h2>Advanced Statistics</h2>
-            <p>
-                Track how your links are performing across the web with our
-                advanced statistics dashboard.
-            </p>
-            <div>
-                <section>
+            <section>
+                <h2>Advanced Statistics</h2>
+                <p>
+                    Track how your links are performing across the web with our
+                    advanced statistics dashboard.
+                </p>
+            </section>
+            <div class="stat_groups">
+                <section class="brand-recog group">
+                    <div><img src="./images/icon-brand-recognition.svg" alt=""></div>
                     <h3>Brand Recognition</h3>
                     <p>
                         Boost your brand recognition with each click. Generic links don’t
                         mean a thing. Branded links help instil confidence in your content.
                     </p>
                 </section>
-                <section>
+                <div class="cyan-line"></div>
+                <section class="detail-rec group">
+                    <div><img src="./images/icon-detailed-records.svg" alt=""></div>
                     <h3>Detailed Records</h3>
                     <p>
                         Gain insights into who is clicking your links. Knowing when and where
                         people engage with your content helps inform better decisions.
                     </p>
                 </section>
-                <section>
+                <section class="full-custom group">
+                    <div><img src="./images/icon-fully-customizable.svg" alt=""></div>
                     <h3>Fully Customizable</h3>
                     <p>
                         Improve brand awareness and content discoverability through customizable
@@ -78,13 +87,13 @@
                 </section>
             </div>
         </section>
-        <section>
+        <section class="boost_section">
             <h2>Boost your links today</h2>
-            <button type="submit">Get Started</button>
+            <button class="get_started" type="submit">Get Started</button>
         </section>
     </main>
     <footer>
-        <nav>
+        <nav class="footer_nav">
             <section>
                 <h4>Features</h4>
                 <a href="">Link Shortening</a>
