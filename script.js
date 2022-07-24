@@ -25,7 +25,7 @@ form.addEventListener("submit", (e) => {
     if (url.value.trim() === "") {
         inputField.classList.add("error");
         error_message.innerHTML = `<em>Please add a link</em>`;
-        
+
         let children = Array.from(formContainer.children);
         let i = 1;
 
@@ -33,7 +33,7 @@ form.addEventListener("submit", (e) => {
             children[i].remove();
             i++;
         }
-        
+
     } else {
         inputField.classList.remove("error");
         error_message.innerHTML = "";
@@ -49,7 +49,7 @@ form.addEventListener("submit", (e) => {
         showAnim();
         let searchTerm = url.value;
         let shortenURL = async () => {
-            try {               
+            try {
                 let response = await fetch(`https://api.shrtco.de/v2/shorten?url=${searchTerm}`);
                 let objectData = await response.json();
                 let results = objectData.result;
@@ -58,14 +58,33 @@ form.addEventListener("submit", (e) => {
                 for (let key in results) {
                     if (key.includes("full_short")) {
                         createLinkBox(searchTerm, results[`${key}`]);
+                        let copyButton = document.querySelector(".short_link button"); 
+                        let sLink = document.querySelector(".short_link a");                          
+                        copyButton.addEventListener("click", () => {
+                            // sLink.href.select();
+                            navigator.clipboard.writeText(sLink.href);
+                            alert("Copied text " + sLink.href)
+                        })          
                     }
                 }
+                
             } catch (e) {
                 console.log(e);
             }
+
+            
+
+            // for (let button in copyButtons) {
+            //     button.addEventListener("click", () => {
+            //         console.log("vlofkidkd");
+            //     })
+            // }
         }
-        setTimeout(shortenURL, 2000)
+        setTimeout(shortenURL, 2000);
+
+
     }
+
 })
 
 
@@ -89,4 +108,3 @@ let createLinkBox = (searchTerm, key) => {
         form.after(resultContainer);
     }
 }
-
