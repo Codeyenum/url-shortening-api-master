@@ -63,7 +63,8 @@ form.addEventListener("submit", (e) => {
                         copyButton.addEventListener("click", () => {
                             // sLink.href.select();
                             navigator.clipboard.writeText(sLink.href);
-                            alert("Copied text " + sLink.href)
+                            copyButton.innerText = "Copied!"
+                            copyButton.style.backgroundColor = "hsl(257, 27%, 26%)";
                         })          
                     }
                 }
