@@ -61,10 +61,9 @@ form.addEventListener("submit", (e) => {
                         let copyButton = document.querySelector(".short_link button"); 
                         let sLink = document.querySelector(".short_link a");                          
                         copyButton.addEventListener("click", () => {
-                            // sLink.href.select();
-                            navigator.clipboard.writeText(sLink.href);
                             copyButton.innerText = "Copied!"
                             copyButton.style.backgroundColor = "hsl(257, 27%, 26%)";
+                            navigator.clipboard.writeText(sLink.href);
                         })          
                     }
                 }
