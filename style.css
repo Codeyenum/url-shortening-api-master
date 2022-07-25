@@ -414,6 +414,10 @@ footer img {
     text-decoration: none;
 }
 
+.footer_nav a:hover {
+    color: var(--cyan);
+}
+
 .socials {
     margin: 1rem 0;
 }
@@ -746,10 +750,6 @@ footer img {
 
     .footer_nav a {
         margin: .25rem 0;
-    }
-
-    .footer_nav a:hover {
-        color: var(--cyan);
     }
 
     .socials {
