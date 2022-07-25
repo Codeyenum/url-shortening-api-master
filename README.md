@@ -46,8 +46,7 @@ Users should be able to:
 
 ### Continued development
 
-First time working with an API, it was pretty cool. I also got to play around with animations and transformation with the loading icon and the dice. 
-
+Second time working with an API, I think i'm ready to learn a JavaScript framework. I'll be starting out with React.
 
 ## Author
 
