@@ -7,7 +7,7 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <!-- <script src="https://kit.fontawesome.com/1b2bdedf91.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/1b2bdedf91.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="https://kit.fontawesome.com/1b2bdedf91.js" crossorigin="anonymous"></script>
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
@@ -27,12 +27,30 @@
 
 <body>
     <header>
-        Features
-        Pricing
-        Resources
-
-        Login
-        Sign Up
+        <img class="logo_img" src="./images/logo.svg" alt="logo">
+        <nav class="desktop_nav">
+            <div class="product_nav">
+                <a href="">Features</a>
+                <a href="">Pricing</a>
+                <a href="">Resources</a>
+            </div>
+            <div class="sign-in">
+                <a href="">Login</a>
+                <button>Sign Up</button>
+            </div>
+        </nav>
+        <div class="nav_card hide">
+            <div class="product_nav">
+                <a href="">Features</a>
+                <a href="">Pricing</a>
+                <a href="">Resources</a>
+            </div>
+            <div class="sign-in">
+                <a href="">Login</a>
+                <button>Sign Up</button>
+            </div>            
+        </div>
+        <i class="menu_btn fa-solid fa-bars"></i>
     </header>
     <main>
         <section class="intro_section">
@@ -56,7 +74,7 @@
             </form>
             <div class="snippet hide">
                 <div class="stage">
-                  <div class="dot-spin"></div>
+                    <div class="dot-spin"></div>
                 </div>
             </div>
             <section>
@@ -132,7 +150,7 @@
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
             Coded by <a href="#">Your Name Here</a>.
         </div> -->
-    </footer>    
+    </footer>
     <script src="./script.js"></script>
 </body>
 
