@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor - Shortly URL shortening API Challenge solution](https://www.frontendmentor.io/solutions/advice-generator-app--EJzvmeJox)
+- Solution URL: [Frontend Mentor - Shortly URL shortening API Challenge solution](https://www.frontendmentor.io/solutions/url-shortening-api-landing-page-dAY3eKxLvF)
 - Live Site URL: [Shortly URL shortening API Challenge](https://codeyenum.github.io/url-shortening-api-master/)
 
 ## My process
